@@ -16,4 +16,5 @@ artifacts:
   files:
     - target/code-deploy.jar
     - appspec.yml
+    - scripts/*
   discard-paths: yes

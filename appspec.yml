@@ -5,14 +5,14 @@ files:
     destination: /home/ec2-user
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
-      timeout: 200
-      runas: root
+    - location: install_dependencies.sh
+      timeout: 120
+      runas: ec2-user
   ApplicationStart:
-    - location: scripts/start.sh
+    - location: start.sh
       timeout: 100
-      runas: root
+      runas: ec2-user
   ApplicationStop:
-    - location: scripts/stop.sh
+    - location: stop.sh
       timeout: 100
-      runas: root
+      runas: ec2-user

@@ -15,7 +15,7 @@ public class HelloAWSController {
 	
 	@GetMapping("/")
 	public String sayHello() {
-		return "Hi there!";
+		return "Hi there, this is new version!";
 	}
 
 }

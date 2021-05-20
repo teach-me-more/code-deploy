@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -rf /home/ec2-user/package
+rm -rf /home/ec2-user/pacakage

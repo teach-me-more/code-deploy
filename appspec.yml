@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/package
+    destination: /home/ec2-user
 permissions:
   - object: /
     pattern: "**"
@@ -24,6 +24,6 @@ hooks:
       runas: ec2-user
   AfterInstall:
     - location: cleanup.sh
-      timout: 100
+      timout: 30
       runas: ec2-user
       

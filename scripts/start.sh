@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo java -jar code-deploy.jar > /dev/null 2> /dev/null < /dev/null &
+sudo nohup java -jar code-deploy.jar > app.log 2>&1 &
